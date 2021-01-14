@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 
 /**
- * Created by linnanquan on 2021/1/14.
+ * Created by nanbox on 2021/1/14.
  */
 class AppShell : Application() {
 

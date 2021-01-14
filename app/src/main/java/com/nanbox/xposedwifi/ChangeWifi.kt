@@ -8,7 +8,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage
 
 
 /**
- * Created by linnanquan on 2021/1/14.
+ * Created by nanbox on 2021/1/14.
  */
 class ChangeWifi : IXposedHookLoadPackage {
 

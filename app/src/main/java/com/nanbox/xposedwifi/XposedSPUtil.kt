@@ -3,7 +3,7 @@ package com.nanbox.xposedwifi
 import de.robv.android.xposed.XSharedPreferences
 
 /**
- * Created by linnanquan on 2021/1/14.
+ * Created by nanbox on 2021/1/14.
  */
 object XposedSPUtil {
 
