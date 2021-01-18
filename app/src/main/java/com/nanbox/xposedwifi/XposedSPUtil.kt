@@ -10,6 +10,7 @@ object XposedSPUtil {
     private const val SP_NAME = "WIFICHANGE"
     private const val SSID = "SSID"
     private const val BSSID = "BSSID"
+    private const val WIFI = "WIFI"
 
     private val sp by lazy {
         XSharedPreferences("com.nanbox.xposedwifi", SP_NAME)
@@ -21,5 +22,9 @@ object XposedSPUtil {
 
     fun getBSSID(): String? {
         return sp.getString(BSSID, null)
+    }
+
+    fun getIsWifi(): Boolean {
+        return sp.getBoolean(WIFI, false)
     }
 }

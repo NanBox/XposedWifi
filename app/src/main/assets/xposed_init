@@ -1,1 +1,2 @@
-com.nanbox.xposedwifi.ChangeWifi
+com.nanbox.xposedwifi.WifiInfoHook
+com.nanbox.xposedwifi.WifiStateHook

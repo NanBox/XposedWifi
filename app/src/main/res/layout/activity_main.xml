@@ -44,6 +44,15 @@
 
     </LinearLayout>
 
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="  模拟 WIFI 连接"
+        android:textColor="#666666"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/btn_save"
         android:layout_width="120dp"

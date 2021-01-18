@@ -11,8 +11,8 @@ android {
         applicationId "com.nanbox.xposedwifi"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 20200114
-        versionName "1.0"
+        versionCode 20200118
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

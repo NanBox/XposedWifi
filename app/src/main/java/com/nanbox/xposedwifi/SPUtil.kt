@@ -10,6 +10,7 @@ object SPUtil {
     private const val SP_NAME = "WIFICHANGE"
     private const val SSID = "SSID"
     private const val BSSID = "BSSID"
+    private const val WIFI = "WIFI"
 
     private val sp by lazy {
         AppShell.context.getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
@@ -19,15 +20,23 @@ object SPUtil {
         sp.edit().putString(SSID, ssid).apply()
     }
 
-    fun setBSSID(bssid: String) {
-        sp.edit().putString(BSSID, bssid).apply()
-    }
-
     fun getSSID(): String? {
         return sp.getString(SSID, null)
     }
 
+    fun setBSSID(bssid: String) {
+        sp.edit().putString(BSSID, bssid).apply()
+    }
+
     fun getBSSID(): String? {
         return sp.getString(BSSID, null)
+    }
+
+    fun setIsWifi(isWifi: Boolean) {
+        sp.edit().putBoolean(WIFI, isWifi).apply()
+    }
+
+    fun getIsWifi(): Boolean {
+        return sp.getBoolean(WIFI, false)
     }
 }
